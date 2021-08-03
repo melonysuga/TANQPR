@@ -3,8 +3,9 @@
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 import cmath
+import json
 from fractions import Fraction
-
+import re
 import sympy
 from sympy import *
 import numpy as np
@@ -51,7 +52,7 @@ def ReachableSpaceI(E, M, p, d):
             F.append(np.matrix(E[i][j]) * np.matrix(M[1]))
     outfile = open('wolf/outdata.dat', 'w+')
     sess = wolfsession()
-    exp=wlexpr('''
+    exp = wlexpr('''
                 P=Import["wolf/data.dat","Table"];
                 vector = Eigenvectors[P];
                 ortho = Orthogonalize[vector]
@@ -59,7 +60,7 @@ def ReachableSpaceI(E, M, p, d):
     sess.evaluate(exp)
     res = sess.evaluate(Global.ortho)  # 输出元组类型数据
     print(res)
-    B=[]
+    B = []
     for i in res:
         B.append(list(i))
     B0 = []
@@ -70,23 +71,23 @@ def ReachableSpaceI(E, M, p, d):
                 V = []
                 for f in F:
                     print(np.c_[phi])
-                    V.append(np.mat(f)*np.mat(np.c_[phi]))
-                outputdata(V,outfile)
-                exp=wlexpr('''
+                    V.append(np.mat(f) * np.mat(np.c_[phi]))
+                outputdata(V, outfile)
+                exp = wlexpr('''
                     P=Import["wolf/outdata.dat","Table"];
                     vector=Eigenvectors[P];
                     ortho = Orthogonalize[vector]
                                     ''')
                 sess.evaluate(exp)
                 orthr = set(sess.evaluate(Global.ortho))
-                B_=[]
+                B_ = []
                 for i in orthr:
                     B_.append(list(i))
                 B1.extend(B_)
                 if B1 == B:
                     break
-                B0=B.copy()
-                B=B1.copy()
+                B0 = B.copy()
+                B = B1.copy()
         return B
 
     print('ReachableSpaceI')
@@ -94,14 +95,18 @@ def ReachableSpaceI(E, M, p, d):
 
 if __name__ == '__main__':
     print_hi('PyCharm')
+    with open("wolf/E.data",'r') as f:
+        sqn=f.read()
+    sqn.split('{*}')
 
     E = []
     E1 = []
+
     a = cmath.sqrt(3)
     e1 = np.mat([[1, 1, 0, -1], [1, -1, 1, 0], [0, 1, 1, 1], [1, 0, -1, 1]])
-    e1 = 1/a * e1
+    e1 = 1 / a * e1
     e2 = np.mat([[1, 1, 0, 1], [-1, 1, -1, 0], [0, 1, 1, -1], [1, 0, -1, -1]])
-    e2 = 1/a * e2
+    e2 = 1 / a * e2
     E1.append(e1)
     E1.append(e2)
     E.append(E1)
@@ -110,6 +115,6 @@ if __name__ == '__main__':
     M1 = np.eye(4) - M0
     M.append(M0)
     M.append(M1)
-    p = np.mat([[1,0,0,0],[0, 0, 0, 0],[0, 0, 0, 0],[0, 0, 0, 0]])
-    d=4
-    ReachableSpaceI(E,M,p,d)
+    p = np.mat([[1, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]])
+    d = 4
+    ReachableSpaceI(E, M, p, d)
