@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     10095,        249]
-NotebookOptionsPosition[      9658,        232]
-NotebookOutlinePosition[     10013,        248]
-CellTagsIndexPosition[      9970,        245]
+NotebookDataLength[     10548,        255]
+NotebookOptionsPosition[     10110,        238]
+NotebookOutlinePosition[     10465,        254]
+CellTagsIndexPosition[     10422,        251]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -118,13 +118,13 @@ Cell[BoxData[
                     RowBox[{"temp2", "+=", 
                     RowBox[{
                     RowBox[{
-                    RowBox[{"B1", "[", 
+                    RowBox[{"B2", "[", 
                     RowBox[{"[", "s", "]"}], "]"}], ".", "temp1"}], "*", 
-                    RowBox[{"B1", "[", 
+                    RowBox[{"B2", "[", 
                     RowBox[{"[", "s", "]"}], "]"}]}]}], ",", 
                     RowBox[{"{", 
                     RowBox[{"s", ",", 
-                    RowBox[{"Length", "[", "B1", "]"}]}], "}"}]}], "]"}], ";",
+                    RowBox[{"Length", "[", "B2", "]"}]}], "}"}]}], "]"}], ";",
                     "\[IndentingNewLine]", 
                    RowBox[{"AppendTo", "[", 
                     RowBox[{"Vlist", ",", 
@@ -165,35 +165,34 @@ Cell[BoxData[
                   RowBox[{"{", 
                    RowBox[{"m", ",", 
                     RowBox[{"Length", "[", "orth", "]"}]}], "}"}]}], "]"}], 
-                ";", "\[IndentingNewLine]", 
-                RowBox[{"If", "[", 
-                 RowBox[{
-                  RowBox[{
-                   RowBox[{
-                    RowBox[{"Length", "[", "orth", "]"}], "\[Equal]", 
-                    RowBox[{"Length", "[", "B2", "]"}]}], " ", "&&", "  ", 
-                   "flag"}], ",", "\[IndentingNewLine]", 
-                  RowBox[{
-                   RowBox[{"Print", "[", "\"\<Break\>\"", "]"}], ";", 
-                   RowBox[{"Break", "[", "]"}]}], ","}], "]"}], ";", 
-                "\[IndentingNewLine]", 
-                RowBox[{"B0", "=", "B1"}], ";", "\[IndentingNewLine]", 
-                RowBox[{"B1", "=", "B2"}], ";"}], "\[IndentingNewLine]", ",", 
+                ";"}], "\[IndentingNewLine]", ",", 
                RowBox[{"Continue", "[", "]"}]}], "]"}], ",", 
              RowBox[{"{", 
               RowBox[{"j", ",", 
-               RowBox[{"Length", "[", "B1", "]"}]}], "}"}]}], "]"}], ";"}], 
-          "\[IndentingNewLine]", " ", ",", 
+               RowBox[{"Length", "[", "B1", "]"}]}], "}"}]}], "]"}], ";", 
+           "\[IndentingNewLine]", "\[IndentingNewLine]", 
+           RowBox[{"If", "[", 
+            RowBox[{
+             RowBox[{
+              RowBox[{
+               RowBox[{"Length", "[", "B1", "]"}], "\[Equal]", 
+               RowBox[{"Length", "[", "B2", "]"}]}], " ", "&&", "  ", 
+              "flag"}], ",", "\[IndentingNewLine]", 
+             RowBox[{
+              RowBox[{"Print", "[", "\"\<Break\>\"", "]"}], ";", 
+              RowBox[{"Break", "[", "]"}]}], ","}], "]"}], ";", 
+           "\[IndentingNewLine]", 
+           RowBox[{"B0", "=", "B1"}], ";", "\[IndentingNewLine]", 
+           RowBox[{"B1", "=", "B2"}], ";"}], "\[IndentingNewLine]", " ", ",", 
           RowBox[{"{", 
            RowBox[{"i", ",", 
             RowBox[{"dimes", "-", "1"}]}], "}"}]}], "]"}], ";", 
         "\[IndentingNewLine]", 
-        RowBox[{"Print", "[", "B1", "]"}], ";"}]}], "\[IndentingNewLine]", 
+        RowBox[{"Return", "[", "B1", "]"}], ";"}]}], "\[IndentingNewLine]", 
       "]"}]}], ";"}], "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"ReachbaleSpaceI", "[", 
-     RowBox[{"Operas", ",", "Meas", ",", "inistate", ",", "dimes"}], "]"}], 
-    ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]"}]}]], "Input",
+   RowBox[{"ReachbaleSpaceI", "[", 
+    RowBox[{"Operas", ",", "Meas", ",", "inistate", ",", "dimes"}], "]"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]"}]}]], "Input",
  CellChangeTimes->{{3.836965631455274*^9, 3.8369659505111227`*^9}, {
    3.836987511972443*^9, 3.8369875844792395`*^9}, {3.836987632534296*^9, 
    3.836987900121166*^9}, {3.836988026239705*^9, 3.8369881066894855`*^9}, {
@@ -201,8 +200,14 @@ Cell[BoxData[
    3.837050579733678*^9}, {3.837050640874191*^9, 3.8370507070233936`*^9}, {
    3.83705074961761*^9, 3.8370508933495693`*^9}, 3.8370510352242126`*^9, {
    3.8370517035789666`*^9, 3.8370517949987164`*^9}, {3.8370518362623525`*^9, 
-   3.8370518815527663`*^9}, {3.837052110907852*^9, 3.8370521591185627`*^9}},
- CellLabel->"In[26]:=",ExpressionUUID->"2b014594-706c-4ee5-a5c9-7c15bbac0844"],
+   3.8370518815527663`*^9}, {3.837052110907852*^9, 3.8370521591185627`*^9}, {
+   3.8370523410354834`*^9, 3.837052447229764*^9}, {3.8370527731340322`*^9, 
+   3.837052797394692*^9}, {3.837052839900796*^9, 3.837052840264345*^9}, {
+   3.8370529803941336`*^9, 3.8370530231794*^9}, {3.8370530631075807`*^9, 
+   3.837053077458511*^9}, {3.8370531457286844`*^9, 3.8370531548353667`*^9}, {
+   3.837053223080741*^9, 3.8370532281313*^9}, {3.837053267607407*^9, 
+   3.837053327454124*^9}},
+ CellLabel->"In[46]:=",ExpressionUUID->"2b014594-706c-4ee5-a5c9-7c15bbac0844"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -223,11 +228,12 @@ Cell[BoxData[
      FractionBox["1", 
       SqrtBox["2"]]}], "}"}], ",", 
    RowBox[{"{", 
-    RowBox[{"0", ",", "0", ",", "1", ",", "0"}], "}"}]}], "}"}]], "Print",
- CellChangeTimes->{{3.8370521492437663`*^9, 3.837052175908114*^9}},
- CellLabel->
-  "\:6b63\:5728\:8ba1\:7b97In[26]:=",ExpressionUUID->"5277d8a9-503e-4325-86ea-\
-a7cd74e5d782"]
+    RowBox[{"0", ",", "0", ",", "1", ",", "0"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.837052353161401*^9, 3.837052406929103*^9, 3.8370524503097715`*^9, 
+   3.83705310450418*^9, 3.837053156369425*^9, 3.837053229519235*^9, {
+   3.837053307463477*^9, 3.8370533299235044`*^9}},
+ CellLabel->"Out[47]=",ExpressionUUID->"a241aa2b-156f-4dd0-ba6a-72f7d73b0388"]
 }, Open  ]]
 },
 WindowSize->{1375, 841},
@@ -248,8 +254,8 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 8332, 182, 1255, "Input",ExpressionUUID->"2b014594-706c-4ee5-a5c9-7c15bbac0844"],
-Cell[8915, 206, 727, 23, 53, "Print",ExpressionUUID->"5277d8a9-503e-4325-86ea-a7cd74e5d782"]
+Cell[580, 22, 8668, 187, 1274, "Input",ExpressionUUID->"2b014594-706c-4ee5-a5c9-7c15bbac0844"],
+Cell[9251, 211, 843, 24, 63, "Output",ExpressionUUID->"a241aa2b-156f-4dd0-ba6a-72f7d73b0388"]
 }, Open  ]]
 }
 ]
