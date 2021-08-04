@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     10548,        255]
-NotebookOptionsPosition[     10110,        238]
-NotebookOutlinePosition[     10465,        254]
-CellTagsIndexPosition[     10422,        251]
+NotebookDataLength[     10644,        256]
+NotebookOptionsPosition[     10206,        239]
+NotebookOutlinePosition[     10561,        255]
+CellTagsIndexPosition[     10518,        252]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -26,7 +26,7 @@ Cell[BoxData[
    RowBox[{
     RowBox[{
      RowBox[{"ReachbaleSpaceI", "[", 
-      RowBox[{"Operas1_", ",", "Meas1_", ",", "Inistate1_", ",", "Dimes1_"}], 
+      RowBox[{"Operas1_", ",", "Meas1_", ",", "Inibais1_", ",", "Dimes1_"}], 
       "]"}], ":=", "\[IndentingNewLine]", 
      RowBox[{"Module", "[", 
       RowBox[{
@@ -34,7 +34,7 @@ Cell[BoxData[
         RowBox[{
          RowBox[{"Operas", "=", "Operas1"}], ",", 
          RowBox[{"Meas", "=", "Meas1"}], ",", 
-         RowBox[{"inistate", "=", "Inistate1"}], ",", 
+         RowBox[{"inibasis", "=", "Inibais1"}], ",", 
          RowBox[{"dimes", "=", "Dimes1"}], ",", "B0", ",", "B1", ",", "B2", 
          ",", "averas", ",", "Vlist", ",", "orth", ",", "temp1", ",", "temp2",
           ",", "flag"}], "}"}], ",", "\[IndentingNewLine]", 
@@ -69,7 +69,7 @@ Cell[BoxData[
         RowBox[{"B1", "=", 
          RowBox[{"List", "[", "]"}]}], ";", "\[IndentingNewLine]", 
         RowBox[{"orth", "=", 
-         RowBox[{"Orthogonalize", "[", "inistate", "]"}]}], ";", 
+         RowBox[{"Orthogonalize", "[", "inibasis", "]"}]}], ";", 
         "\[IndentingNewLine]", 
         RowBox[{"Do", "[", 
          RowBox[{
@@ -191,7 +191,7 @@ Cell[BoxData[
         RowBox[{"Return", "[", "B1", "]"}], ";"}]}], "\[IndentingNewLine]", 
       "]"}]}], ";"}], "\[IndentingNewLine]", 
    RowBox[{"ReachbaleSpaceI", "[", 
-    RowBox[{"Operas", ",", "Meas", ",", "inistate", ",", "dimes"}], "]"}], 
+    RowBox[{"Operas", ",", "Meas", ",", "inibasis", ",", "dimes"}], "]"}], 
    "\[IndentingNewLine]", "\[IndentingNewLine]"}]}]], "Input",
  CellChangeTimes->{{3.836965631455274*^9, 3.8369659505111227`*^9}, {
    3.836987511972443*^9, 3.8369875844792395`*^9}, {3.836987632534296*^9, 
@@ -206,8 +206,8 @@ Cell[BoxData[
    3.8370529803941336`*^9, 3.8370530231794*^9}, {3.8370530631075807`*^9, 
    3.837053077458511*^9}, {3.8370531457286844`*^9, 3.8370531548353667`*^9}, {
    3.837053223080741*^9, 3.8370532281313*^9}, {3.837053267607407*^9, 
-   3.837053327454124*^9}},
- CellLabel->"In[46]:=",ExpressionUUID->"2b014594-706c-4ee5-a5c9-7c15bbac0844"],
+   3.837053327454124*^9}, {3.837057848067583*^9, 3.837057925217473*^9}},
+ CellLabel->"In[79]:=",ExpressionUUID->"2b014594-706c-4ee5-a5c9-7c15bbac0844"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -232,12 +232,13 @@ Cell[BoxData[
  CellChangeTimes->{
   3.837052353161401*^9, 3.837052406929103*^9, 3.8370524503097715`*^9, 
    3.83705310450418*^9, 3.837053156369425*^9, 3.837053229519235*^9, {
-   3.837053307463477*^9, 3.8370533299235044`*^9}},
- CellLabel->"Out[47]=",ExpressionUUID->"a241aa2b-156f-4dd0-ba6a-72f7d73b0388"]
+   3.837053307463477*^9, 3.8370533299235044`*^9}, {3.8370580054469357`*^9, 
+   3.837058010947867*^9}},
+ CellLabel->"Out[80]=",ExpressionUUID->"69e711f7-6744-4187-9fdb-4850fbaf3470"]
 }, Open  ]]
 },
 WindowSize->{1375, 841},
-WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+WindowMargins->{{1, Automatic}, {Automatic, 2}},
 FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (2018\:5e743\:670828\
 \:65e5)",
 StyleDefinitions->"Default.nb"
@@ -254,8 +255,8 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 8668, 187, 1274, "Input",ExpressionUUID->"2b014594-706c-4ee5-a5c9-7c15bbac0844"],
-Cell[9251, 211, 843, 24, 63, "Output",ExpressionUUID->"a241aa2b-156f-4dd0-ba6a-72f7d73b0388"]
+Cell[580, 22, 8712, 187, 1274, "Input",ExpressionUUID->"2b014594-706c-4ee5-a5c9-7c15bbac0844"],
+Cell[9295, 211, 895, 25, 63, "Output",ExpressionUUID->"69e711f7-6744-4187-9fdb-4850fbaf3470"]
 }, Open  ]]
 }
 ]
