@@ -10,16 +10,14 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     11653,        278]
-NotebookOptionsPosition[     10998,        258]
-NotebookOutlinePosition[     11382,        275]
-CellTagsIndexPosition[     11339,        272]
+NotebookDataLength[     10235,        239]
+NotebookOptionsPosition[      9804,        223]
+NotebookOutlinePosition[     10188,        240]
+CellTagsIndexPosition[     10145,        237]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
-
-Cell[CellGroupData[{
 Cell[BoxData[{
  RowBox[{
   RowBox[{"W1", "=", 
@@ -212,41 +210,8 @@ Cell[BoxData[{
    3.8374137663210535`*^9}, {3.8374138646672125`*^9, 
    3.8374139705504513`*^9}, {3.8374140276848345`*^9, 3.837414068590631*^9}, {
    3.837414152997472*^9, 3.837414182419233*^9}, {3.8374142216571293`*^9, 
-   3.837414222301487*^9}},ExpressionUUID->"014638fe-6869-4c8d-a339-\
-456bf621b0f5"],
-
-Cell[BoxData[
- TemplateBox[{
-  "LinearSolve","nosol",
-   "\"\:78b0\:5230\:7684\:7ebf\:6027\:65b9\:7a0b\:65e0\:89e3.\"",2,800,13,
-   20136792434783274845,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.837414183551588*^9},
- CellLabel->
-  "\:6b63\:5728\:8ba1\:7b97In[784]:=",ExpressionUUID->"961fea4b-5479-4dfd-\
-b15b-67e5658e9f34"],
-
-Cell[BoxData[
- RowBox[{"LinearSolve", "[", 
-  RowBox[{
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"{", 
-      RowBox[{"1", ",", "3", ",", "4", ",", "2"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"4", ",", "0", ",", "1", ",", "0"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"0", ",", "0", ",", "0", ",", "0"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"0", ",", "0", ",", "1", ",", "1"}], "}"}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"a1", ",", "a2", ",", "1", ",", "a1"}], "}"}]}], "]"}]], "Output",
- CellChangeTimes->{{3.837413748632852*^9, 3.8374137694097223`*^9}, {
-  3.83741389676908*^9, 3.8374139528228188`*^9}, {3.8374140287162447`*^9, 
-  3.837414072737133*^9}, {3.837414158309372*^9, 3.8374141835560884`*^9}},
- CellLabel->
-  "Out[800]=",ExpressionUUID->"875a0323-013a-4341-ac61-553a42e03b65"]
-}, Open  ]],
+   3.837414222301487*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"014638fe-6869-4c8d-a339-456bf621b0f5"],
 
 Cell[BoxData[
  RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]", 
@@ -256,7 +221,7 @@ Cell[BoxData[
    3.8369664159784856`*^9},ExpressionUUID->"f0fed10e-0c9b-4d64-965d-\
 c1eb5ec817a5"]
 },
-WindowSize->{718, 848},
+WindowSize->{718, 841},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
 Magnification:>1.1 Inherited,
 FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (2018\:5e743\:670828\
@@ -274,12 +239,8 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[CellGroupData[{
-Cell[580, 22, 8911, 193, 826, "Input",ExpressionUUID->"014638fe-6869-4c8d-a339-456bf621b0f5"],
-Cell[9494, 217, 354, 9, 25, "Message",ExpressionUUID->"961fea4b-5479-4dfd-b15b-67e5658e9f34"],
-Cell[9851, 228, 821, 19, 59, "Output",ExpressionUUID->"875a0323-013a-4341-ac61-553a42e03b65"]
-}, Open  ]],
-Cell[10687, 250, 307, 6, 99, "Input",ExpressionUUID->"f0fed10e-0c9b-4d64-965d-c1eb5ec817a5"]
+Cell[558, 20, 8932, 193, 826, "Input",ExpressionUUID->"014638fe-6869-4c8d-a339-456bf621b0f5"],
+Cell[9493, 215, 307, 6, 99, "Input",ExpressionUUID->"f0fed10e-0c9b-4d64-965d-c1eb5ec817a5"]
 }
 ]
 *)
