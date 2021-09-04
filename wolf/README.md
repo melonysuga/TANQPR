@@ -1,6 +1,17 @@
-**# TANQPR**
+### TANQPR
 
-​	The prototypes of Algorithms have been implemented in the Wolfram language on Mathematica 11.3 with Intel Core i7-10700 CPU at 2.90GHz. The source files are available at [there]<https://github.com/Holly-Jiang/TANQPR>.  All the functions required  for analyzing the termination of a nondeterministic quantum program are listed as follows.
+#### Introduction
+
+Verifying quantum programs has attracted a lot of interest in recent years. In this paper, we consider the termination problem of quantum programs
+with nondeterminism.
+To analyze termination effectively, we over-approximate the reachable set of quantum program states by the reachable subspace,
+which has an explicit algebraic structure.
+Compared with the counterpart in existing literature, our reachable subspace is more precise and can be computed in polynomial time.
+We illustrate the algebraic method via a running example --- the quantum Bernoulli factory protocol.
+Moreover, we study the set of divergent states from which the program terminates with probability zero under some scheduler. By exploiting the algebraic structure of the divergent set, we develop an effective approach using the existential theory of the reals.
+The complexity is shown, for the first time, to be in exponential time.
+
+​	This repository is the Python implementation for algorithms introduced in "Termination Analysis of NondeterministicQuantum Programs Revisited". The prototypes of Algorithms have been implemented in the Wolfram language on Mathematica 11.3 with Intel Core i7-10700 CPU at 2.90GHz. The source files are available at [there]<https://github.com/Holly-Jiang/TANQPR>.  All the functions required  for analyzing the termination of a nondeterministic quantum program are listed as follows.
 
 - **Initialization.nb**
 
