@@ -1,4 +1,4 @@
-### TANQPR
+### Termination Analysis of Nondeterministic Quantum Programs Revisited
 
 #### Introduction
 
@@ -11,11 +11,11 @@ We illustrate the algebraic method via a running example --- the quantum Bernoul
 Moreover, we study the set of divergent states from which the program terminates with probability zero under some scheduler. By exploiting the algebraic structure of the divergent set, we develop an effective approach using the existential theory of the reals.
 The complexity is shown, for the first time, to be in exponential time.
 
-​	This repository is the Python implementation for algorithms introduced in "Termination Analysis of NondeterministicQuantum Programs Revisited". The prototypes of Algorithms have been implemented in the Wolfram language on Mathematica 11.3 with Intel Core i7-10700 CPU at 2.90GHz. The source files are available at [there]<https://github.com/Holly-Jiang/TANQPR>.  All the functions required  for analyzing the termination of a nondeterministic quantum program are listed as follows.
+​	This repository is the Python implementation for algorithms introduced in "Termination Analysis of NondeterministicQuantum Programs Revisited". The prototypes of Algorithms have been implemented in the Wolfram language on Mathematica 11.3 with Intel Core i5-10700 CPU at 2.90GHz.  All the functions required  for analyzing the termination of a nondeterministic quantum program are listed as follows.
 
 - **Initialization.nb**
 
-  initializes a nondeterministic program with given information about super-operators, projective measurement and an input state;
+  initializes a nondeterministic program with given information about super-operators, projective measurement and an input state by the example in the paper "Termination Analysis of Nondeterministic Quantum Programs Revisited";
 
 - **ReachableSpaceI.nb**
 

@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     14041,        330]
-NotebookOptionsPosition[     13129,        308]
-NotebookOutlinePosition[     13484,        324]
-CellTagsIndexPosition[     13441,        321]
+NotebookDataLength[     14131,        341]
+NotebookOptionsPosition[     13469,        320]
+NotebookOutlinePosition[     13824,        336]
+CellTagsIndexPosition[     13781,        333]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -181,31 +181,44 @@ Cell[BoxData[
                  RowBox[{"Length", "[", "B2", "]"}]}], " ", "&&", "  ", 
                 "flag"}], ")"}], " ", "||", 
               RowBox[{
-               RowBox[{"Length", "[", "B2", "]"}], "\[Equal]", "dimes"}]}], 
-             ",", "\[IndentingNewLine]", 
-             RowBox[{
-              RowBox[{"Print", "[", "\"\<Break\>\"", "]"}], ";", 
-              RowBox[{"Break", "[", "]"}]}], ","}], "]"}], ";", 
+               RowBox[{"Length", "[", "B1", "]"}], "\[Equal]", "dimes"}]}], 
+             ",", 
+             RowBox[{"Break", "[", "]"}], ","}], "]"}], ";", 
            "\[IndentingNewLine]", 
            RowBox[{"B0", "=", "B1"}], ";", "\[IndentingNewLine]", 
            RowBox[{"B1", "=", "B2"}], ";"}], "\[IndentingNewLine]", " ", ",", 
           RowBox[{"{", 
            RowBox[{"i", ",", 
             RowBox[{"dimes", "-", "1"}]}], "}"}]}], "]"}], ";", 
-        "\[IndentingNewLine]", 
+        "\[IndentingNewLine]", "\[IndentingNewLine]", 
+        RowBox[{"Print", "[", 
+         RowBox[{
+         "\"\<The final result of I-type reachable space: \>\"", ",", "B1", 
+          ",", "\"\<,\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"Length", "[", "B1", "]"}], "\[Equal]", "dimes"}], ",", 
+          RowBox[{"Print", "[", "\"\<it's the Hilbert space.\>\"", "]"}], 
+          ","}], "]"}], ";", "\[IndentingNewLine]", 
         RowBox[{"Return", "[", "B1", "]"}], ";"}]}], "\[IndentingNewLine]", 
       "]"}]}], ";"}], "\[IndentingNewLine]", 
-   RowBox[{"time", "=", 
-    RowBox[{"TimeUsed", "[", "]"}]}], "\[IndentingNewLine]", 
-   RowBox[{"ReachableSpaceI", "[", 
-    RowBox[{"Operas", ",", "Meas", ",", "inibasis", ",", "dimes"}], "]"}], 
-   "\[IndentingNewLine]", 
-   RowBox[{"Print", "[", 
-    RowBox[{
-     RowBox[{"TimeUsed", "[", "]"}], "-", "time"}], "]"}], 
-   "\[IndentingNewLine]", 
-   RowBox[{"MemoryInUse", "[", "]"}], "\[IndentingNewLine]", 
-   RowBox[{"MaxMemoryUsed", "[", "]"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"time", "=", 
+     RowBox[{"TimeUsed", "[", "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"ReachableSpaceI", "[", 
+     RowBox[{"Operas", ",", "Meas", ",", "inibasis", ",", "dimes"}], "]"}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Print", "[", 
+     RowBox[{"\"\<The Time cost: \>\"", ",", 
+      RowBox[{
+       RowBox[{"TimeUsed", "[", "]"}], "-", "time"}], ",", 
+      "\"\< the maxmemory cost: \>\"", ",", 
+      RowBox[{
+       RowBox[{"MaxMemoryUsed", "[", "]"}], "\"\<.\>\""}]}], "]"}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
    "\[IndentingNewLine]"}]}]], "Input",
  CellChangeTimes->{{3.836965631455274*^9, 3.8369659505111227`*^9}, {
    3.836987511972443*^9, 3.8369875844792395`*^9}, {3.836987632534296*^9, 
@@ -225,89 +238,88 @@ Cell[BoxData[
    3.8381553312806396`*^9}, {3.8383430686051426`*^9, 3.8383430832070594`*^9}, 
    3.8385989571868277`*^9, {3.83859900572753*^9, 3.8385990565501432`*^9}, {
    3.839151167593907*^9, 3.839151190444332*^9}, {3.839151746936478*^9, 
-   3.8391517529390793`*^9}, {3.839151801328034*^9, 3.839151815762306*^9}},
+   3.8391517529390793`*^9}, {3.839151801328034*^9, 3.839151815762306*^9}, {
+   3.8404990834690495`*^9, 3.8404993613178234`*^9}, {3.8404994777254763`*^9, 
+   3.840499493724904*^9}, {3.840499621910564*^9, 3.8404996255585103`*^9}, {
+   3.8404996737518635`*^9, 3.8404996774956856`*^9}, {3.840499930634058*^9, 
+   3.840499991158249*^9}, 3.840500118534017*^9, {3.840500177924232*^9, 
+   3.840500232344281*^9}, {3.8405002704166656`*^9, 3.840500337465928*^9}, {
+   3.840500388758329*^9, 3.8405003897087693`*^9}, 3.840500564796337*^9},
  CellLabel->
-  "In[261]:=",ExpressionUUID->"2b014594-706c-4ee5-a5c9-7c15bbac0844"],
+  "In[123]:=",ExpressionUUID->"2b014594-706c-4ee5-a5c9-7c15bbac0844"],
 
-Cell[BoxData["5.031000000000001`"], "Output",
- CellChangeTimes->{
-  3.8383430839264793`*^9, 3.8385989614241734`*^9, 3.8385990575409975`*^9, 
-   3.8385990907684526`*^9, 3.839030659671527*^9, 3.8391511611591825`*^9, 
-   3.839151191517068*^9, 3.839151753876406*^9, {3.839151808205902*^9, 
-   3.839151816668708*^9}},
- CellLabel->
-  "Out[262]=",ExpressionUUID->"a89c2a84-a406-4713-93e2-8a3e3585f33c"],
-
-Cell[BoxData["\<\"Break\"\>"], "Print",
- CellChangeTimes->{
-  3.8383430839014907`*^9, 3.8385989614201756`*^9, 3.8385990575309067`*^9, 
-   3.8385990907574587`*^9, 3.839030659667528*^9, 3.839151161156186*^9, 
-   3.8391511915261774`*^9, 3.8391517538804197`*^9, {3.8391518082159204`*^9, 
-   3.839151816677122*^9}},
- CellLabel->
-  "\:6b63\:5728\:8ba1\:7b97In[261]:=",ExpressionUUID->"a4c33af7-5a68-44b6-\
-80eb-ce4d9f46844c"],
+Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{
-   RowBox[{"{", 
-    RowBox[{"0", ",", "0", ",", "0", ",", "1"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     FractionBox["1", 
-      SqrtBox["2"]], ",", "0", ",", 
-     RowBox[{"-", 
-      FractionBox["1", 
-       SqrtBox["2"]]}], ",", "0"}], "}"}], ",", 
+ InterpretationBox[
+  RowBox[{"\<\"The final result of I-type reachable space: \"\>", 
+   "\[InvisibleSpace]", 
    RowBox[{"{", 
     RowBox[{
-     FractionBox["1", 
-      SqrtBox["6"]], ",", 
-     RowBox[{"-", 
-      SqrtBox[
-       FractionBox["2", "3"]]}], ",", 
-     FractionBox["1", 
-      SqrtBox["6"]], ",", "0"}], "}"}]}], "}"}]], "Output",
- CellChangeTimes->{
-  3.8383430839264793`*^9, 3.8385989614241734`*^9, 3.8385990575409975`*^9, 
-   3.8385990907684526`*^9, 3.839030659671527*^9, 3.8391511611591825`*^9, 
-   3.839151191517068*^9, 3.839151753876406*^9, {3.839151808205902*^9, 
-   3.8391518166811733`*^9}},
+     RowBox[{"{", 
+      RowBox[{"0", ",", "0", ",", "0", ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["1", 
+        SqrtBox["2"]], ",", "0", ",", 
+       RowBox[{"-", 
+        FractionBox["1", 
+         SqrtBox["2"]]}], ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["1", 
+        SqrtBox["6"]], ",", 
+       RowBox[{"-", 
+        SqrtBox[
+         FractionBox["2", "3"]]}], ",", 
+       FractionBox["1", 
+        SqrtBox["6"]], ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox["1", 
+         SqrtBox["3"]]}], ",", 
+       RowBox[{"-", 
+        FractionBox["1", 
+         SqrtBox["3"]]}], ",", 
+       RowBox[{"-", 
+        FractionBox["1", 
+         SqrtBox["3"]]}], ",", "0"}], "}"}]}], "}"}], 
+   "\[InvisibleSpace]", "\<\",\"\>"}],
+  SequenceForm[
+  "The final result of I-type reachable space: ", {{0, 0, 0, 1}, {
+    2^Rational[-1, 2], 0, -2^Rational[-1, 2], 0}, {
+    6^Rational[-1, 2], -Rational[2, 3]^Rational[1, 2], 6^Rational[-1, 2], 
+     0}, {-3^Rational[-1, 2], -3^Rational[-1, 2], -3^Rational[-1, 2], 0}}, 
+   ","],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.840500592667283*^9, 3.8405006339321957`*^9},
  CellLabel->
-  "Out[263]=",ExpressionUUID->"78185eb6-7268-409f-b620-2f536cc3b4a9"],
+  "\:6b63\:5728\:8ba1\:7b97In[123]:=",ExpressionUUID->"34f919a1-e5e3-4606-\
+b489-18acf7de2d18"],
 
-Cell[BoxData["0.`"], "Print",
- CellChangeTimes->{
-  3.8383430839014907`*^9, 3.8385989614201756`*^9, 3.8385990575309067`*^9, 
-   3.8385990907574587`*^9, 3.839030659667528*^9, 3.839151161156186*^9, 
-   3.8391511915261774`*^9, 3.8391517538804197`*^9, {3.8391518082159204`*^9, 
-   3.8391518166861563`*^9}},
+Cell[BoxData["\<\"it's the Hilbert space.\"\>"], "Print",
+ CellChangeTimes->{3.840500592667283*^9, 3.840500633945187*^9},
  CellLabel->
-  "\:6b63\:5728\:8ba1\:7b97In[261]:=",ExpressionUUID->"d9f73a8b-6da0-4240-\
-93cf-99af6d4d868c"],
+  "\:6b63\:5728\:8ba1\:7b97In[123]:=",ExpressionUUID->"d185a98f-76a5-43ea-\
+9282-4e420cd60bae"],
 
-Cell[BoxData["108422640"], "Output",
- CellChangeTimes->{
-  3.8383430839264793`*^9, 3.8385989614241734`*^9, 3.8385990575409975`*^9, 
-   3.8385990907684526`*^9, 3.839030659671527*^9, 3.8391511611591825`*^9, 
-   3.839151191517068*^9, 3.839151753876406*^9, {3.839151808205902*^9, 
-   3.8391518166891537`*^9}},
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"The Time cost: \"\>", "\[InvisibleSpace]", "0.`", 
+   "\[InvisibleSpace]", "\<\" the maxmemory cost: \"\>", "\[InvisibleSpace]", 
+   RowBox[{"69578840", " ", "\<\".\"\>"}]}],
+  SequenceForm["The Time cost: ", 0., " the maxmemory cost: ", 69578840 "."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.840500592667283*^9, 3.8405006339491844`*^9},
  CellLabel->
-  "Out[265]=",ExpressionUUID->"ec2accc0-27fc-4bc9-9d24-bbc064332083"],
-
-Cell[BoxData["108793088"], "Output",
- CellChangeTimes->{
-  3.8383430839264793`*^9, 3.8385989614241734`*^9, 3.8385990575409975`*^9, 
-   3.8385990907684526`*^9, 3.839030659671527*^9, 3.8391511611591825`*^9, 
-   3.839151191517068*^9, 3.839151753876406*^9, {3.839151808205902*^9, 
-   3.839151816691153*^9}},
- CellLabel->
-  "Out[266]=",ExpressionUUID->"5452b348-2dc7-4430-acd6-18cc3a8bf297"]
+  "\:6b63\:5728\:8ba1\:7b97In[123]:=",ExpressionUUID->"17d84a58-563c-4574-\
+ae8d-62136cc038ce"]
+}, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1375, 841},
-WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+WindowSize->{1361, 841},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
 FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (2018\:5e743\:670828\
 \:65e5)",
 StyleDefinitions->"Default.nb"
@@ -324,13 +336,12 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 9628, 207, 1440, "Input",ExpressionUUID->"2b014594-706c-4ee5-a5c9-7c15bbac0844"],
-Cell[10211, 231, 395, 7, 32, "Output",ExpressionUUID->"a89c2a84-a406-4713-93e2-8a3e3585f33c"],
-Cell[10609, 240, 419, 8, 22, "Print",ExpressionUUID->"a4c33af7-5a68-44b6-80eb-ce4d9f46844c"],
-Cell[11031, 250, 888, 27, 75, "Output",ExpressionUUID->"78185eb6-7268-409f-b620-2f536cc3b4a9"],
-Cell[11922, 279, 411, 8, 22, "Print",ExpressionUUID->"d9f73a8b-6da0-4240-93cf-99af6d4d868c"],
-Cell[12336, 289, 388, 7, 32, "Output",ExpressionUUID->"ec2accc0-27fc-4bc9-9d24-bbc064332083"],
-Cell[12727, 298, 386, 7, 32, "Output",ExpressionUUID->"5452b348-2dc7-4430-acd6-18cc3a8bf297"]
+Cell[580, 22, 10587, 226, 1441, "Input",ExpressionUUID->"2b014594-706c-4ee5-a5c9-7c15bbac0844"],
+Cell[CellGroupData[{
+Cell[11192, 252, 1507, 46, 64, "Print",ExpressionUUID->"34f919a1-e5e3-4606-b489-18acf7de2d18"],
+Cell[12702, 300, 230, 4, 22, "Print",ExpressionUUID->"d185a98f-76a5-43ea-9282-4e420cd60bae"],
+Cell[12935, 306, 506, 10, 22, "Print",ExpressionUUID->"17d84a58-563c-4574-ae8d-62136cc038ce"]
+}, Open  ]]
 }, Open  ]]
 }
 ]
