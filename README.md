@@ -64,19 +64,19 @@ The complexity is shown, for the first time, to be in exponential time.
   wolframscript > ReachableSetI.txt
   ```
 
-  the results output in the file ```/home/vmcai/Desktop/TANQP/wolf/RSI.dat```
+  the results output in the file ```/home/vmcai/Desktop/TANQPR/wolf/RSI.dat```
 
 2. Calculate II-type Reachable Space:
 
 - in the linux system:
-  open the terminal in the directory ```/home/vmcai/Desktop/TANQP/wolf/```
+  open the terminal in the directory ```/home/vmcai/Desktop/TANQPR/wolf/```
   then input the command and enter:
 
   ```
   wolframscript > ReachableSpaceII.txt
   ```
 
-  the results output in the file ```/home/vmcai/Desktop/TANQP/wolf/RSII.dat```
+  the results output in the file ```/home/vmcai/Desktop/TANQPR/wolf/RSII.dat```
 
 - in the cloud (https://www.wolframcloud.com/):
   open the file ReachableSpaceII.nb and press shift and enter at the same time,
@@ -116,6 +116,9 @@ The complexity is shown, for the first time, to be in exponential time.
    ```
 
    Then the run ends, and the result is displayed at the end of the file.
+   If you want to use cloud resources (https://www.wolframcloud.com/), you can use this account, but please don't abuse it.
+Account number: 51194501050@stu.ecnu.edu.cn
+Password: vmcai2021
 
 
 
