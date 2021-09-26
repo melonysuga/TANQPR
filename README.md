@@ -47,14 +47,14 @@ The complexity is shown, for the first time, to be in exponential time.
 
 - in the linux system:
 
-  open the terminal in the directory   ``` /home/vmcai/Desktop/TANQP/wolf/```
+  open the terminal in the directory   ``` /home/vmcai/Desktop/TANQPR/wolf/```
   then input the command and enter: 
 
   ```
   wolframscript > ReachableSpaceI.txt
   ```
 
-  the results output in the file ```/home/vmcai/Desktop/TANQP/wolf/RSI.dat```
+  the results output in the file ```/home/vmcai/Desktop/TANQPR/wolf/RSI.dat```
 
 - in the cloud (https://www.wolframcloud.com/):
   open the file ReachableSpaceII.nb and press shift and enter at the same time,
