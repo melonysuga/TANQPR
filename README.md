@@ -85,6 +85,7 @@ The complexity is shown, for the first time, to be in exponential time.
 3. Calculate Pure Divergent Set:
    Since Mathematica cannot perform interrupt input on the command line, we only provide the cloud operation method:
    Please enter the basis of subspace according to the output.
+   
    Round 1: For actions  \alpha_1, enter the basis:
 
    ```mathematica
