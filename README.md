@@ -45,7 +45,7 @@ The complexity is shown, for the first time, to be in exponential time.
 
 1. Calculate I-type Reachable Space:
 
-- in the linux system:
+- in the linux:
 
   open the terminal in the directory   ``` /home/vmcai/Desktop/TANQPR/wolf/```
   then input the command and enter: 
@@ -68,7 +68,7 @@ The complexity is shown, for the first time, to be in exponential time.
 
 2. Calculate II-type Reachable Space:
 
-- in the linux system:
+- in the linux:
   open the terminal in the directory ```/home/vmcai/Desktop/TANQPR/wolf/```
   then input the command and enter:
 
