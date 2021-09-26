@@ -40,3 +40,81 @@ The complexity is shown, for the first time, to be in exponential time.
 ​        After fixing the dimension of the Hilbert space, a nondeterministic quantum programs, and an input state, one can invoke the algorithms by calling the above functions respectively.
 
 ​       Generally, the functions in the files **ReachableSpaceI.nb** and **ReachableSpaceII.nb**  are efficient as their theoretical complexity is **PTIME**. They take time 16ms, 15ms and space 104.40MB, 103.51MB, respectively on the running example. Those in the file **divergentSet.nb**  may be inefficient (in the worst case), due to the fact that the quantifier elimination and the derivation of the pure divergent set by a tree construction are both  **EXPTIME**. However, it fortunately takes time 2797ms and space 105.91MB on the running example.
+**How to reproduce the example?**
+
+1. Calculate I-type Reachable Space:
+
+- in the linux system:
+
+  open the terminal in the directory   ``` /home/vmcai/Desktop/TANQP/wolf/```
+  then input the command and enter: 
+
+  ```
+  wolframscript > ReachableSpaceI.txt
+  ```
+
+  the results output in the file ```/home/vmcai/Desktop/TANQP/wolf/RSI.dat```
+
+- in the cloud (https://www.wolframcloud.com/):
+  open the file ReachableSpaceII.nb and press shift and enter at the same time,
+  The result is displayed at the end of the file.
+
+- ```
+  wolframscript > ReachableSetI.txt
+  ```
+
+  the results output in the file ```/home/vmcai/Desktop/TANQP/wolf/RSI.dat```
+
+  
+
+2. Calculate II-type Reachable Space:
+
+- in the linux system:
+  open the terminal in the directory ```/home/vmcai/Desktop/TANQP/wolf/```
+  then input the command and enter:
+
+  ```
+  wolframscript > ReachableSpaceII.txt
+  ```
+
+  the results output in the file ```/home/vmcai/Desktop/TANQP/wolf/RSII.dat```
+
+- in the cloud (https://www.wolframcloud.com/):
+  open the file ReachableSpaceII.nb and press shift and enter at the same time,
+  The result  is displayed at the end of the file.
+
+3. Calculate Pure Divergent Set:
+   Since Mathematica cannot perform interrupt input on the command line, we only provide the cloud operation method:
+   Please enter the basis of subspace according to the output.
+   Round 1: For actions α_{1}, enter the basis:
+
+   ```mathematica
+   {{0, 0, 0, 1}, {1/Sqrt[2], 0, -(1/Sqrt[2]), 0}}
+   ```
+
+   Round 2: For actions α_{2}, enter the basis:
+
+   ```mathematica
+   {{1, 0, 0, 0}, {0, 0, 1/Sqrt[2], 1/Sqrt[2]}}
+   ```
+
+   Round 3: For actions α_{1}α_{1}, enter the basis
+
+   ```mathematica
+   {{0, 0, 0, 1}, {1/Sqrt[2], 0, -(1/Sqrt[2]), 0}}
+   ```
+
+   Round 4: For actions α_{1}α_{2}, enter the basis
+
+   ```mathematica
+   {{-1, 0, Sqrt[2]/Sqrt[3], Sqrt[2]/Sqrt[3]}}
+   ```
+
+   Round 3: For actions α_{2}α_{2}, enter the basis
+
+   ```mathematica
+   {{1, 0, 0, 0}, {0, 0, 1/Sqrt[2], 1/Sqrt[2]}}
+   ```
+
+   Then the run ends, and the result is displayed at the end of the file.
+
