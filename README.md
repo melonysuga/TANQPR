@@ -58,13 +58,7 @@ The complexity is shown, for the first time, to be in exponential time.
 
 - in the cloud (https://www.wolframcloud.com/):
   open the file ReachableSpaceII.nb and press shift and enter at the same time,
-  The result is displayed at the end of the file.
-
-- ```
-  wolframscript > ReachableSetI.txt
-  ```
-
-  the results output in the file ```/home/vmcai/Desktop/TANQPR/wolf/RSI.dat```
+  the result is displayed at the end of the file.
 
 2. Calculate II-type Reachable Space:
 
@@ -80,7 +74,7 @@ The complexity is shown, for the first time, to be in exponential time.
 
 - in the cloud (https://www.wolframcloud.com/):
   open the file ReachableSpaceII.nb and press shift and enter at the same time,
-  The result  is displayed at the end of the file.
+  the result is displayed at the end of the file.
 
 3. Calculate Pure Divergent Set:
    Since Mathematica cannot perform interrupt input on the command line, we only provide the cloud operation method:
