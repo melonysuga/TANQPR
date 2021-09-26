@@ -104,7 +104,7 @@ The complexity is shown, for the first time, to be in exponential time.
    {{0, 0, 0, 1}, {1/Sqrt[2], 0, -(1/Sqrt[2]), 0}}
    ```
 
-   Round 4: For actions α_{1}α_{2}, enter the basis
+   Round 4: For actions $\alpha_{1}α_{2}$, enter the basis
 
    ```mathematica
    {{-1, 0, Sqrt[2]/Sqrt[3], Sqrt[2]/Sqrt[3]}}
