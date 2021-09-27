@@ -27,7 +27,7 @@ The complexity is shown, for the first time, to be in exponential time.
 
   	+ **LinearIndepHerm** checks whether a Hermitian operator can be linearly expressed by the current linearly independent basis;
 
-- **DivergentSet.nb**
+- **DivergentSet.nb**  
 
   computes the set of pure divergent states from which the given nondeterministic quantum program terminates with probability zero under some scheduler;
   
