@@ -43,8 +43,8 @@ The complexity is shown, for the first time, to be in exponential time.
 
 **How to replicate the example?**
 
-We have provided Wolfram Mathematica 12.0 with a graphical interface in the VM. You can directly import and use it. Our code supports mathematica 11.3 and above.
-If you have Wolfram Mathematica of Windows system, you can also import and run it directly. Note that the code of windows and linux versions are slightly different in the way of initializing data.
+We have provided Wolfram Mathematica 12.0 with a graphical interface in the VM. Our code supports mathematica 11.3 and above.
+If you have Wolfram Mathematica of Windows, you can also import and run it directly. Note that the code of windows and linux versions are slightly different in the way of initializing data.
 
 1. Calculate I-type Reachable Space:
 
