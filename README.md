@@ -46,7 +46,7 @@ The supported version of Wolfram Mathematica must be 11.3 and above.
 
 We have provided Wolfram Mathematica 12.0 with a graphical interface in the virtual machine ***vmcai-ae22.ova*** (The user name and password are ***vmcai***).
 
-If you have already installed Wolfram Mathematica in your PC, you can directly operate the .nb files provided in ***wolframcode*** directory. 
+If you have already installed Wolfram Mathematica in your PC, you can directly operate the .nb files provided in ***wolf*** directory. 
 
 Note that the layout of initial data of examples in Linux version is slightly different from Windows/MacOS version.
 
