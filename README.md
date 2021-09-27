@@ -70,19 +70,19 @@ If you have Wolfram Mathematica of Windows system, you can also import and run i
    {{1, 0, 0, 0}, {0, 0, 1/Sqrt[2], 1/Sqrt[2]}}
    ```
 
-   Round 3: For actions \alpha_1\alpha_1, enter the basis
+   Round 3: For actions \alpha_1\alpha_1, enter the basis:
 
    ```mathematica
    {{0, 0, 0, 1}, {1/Sqrt[2], 0, -(1/Sqrt[2]), 0}}
    ```
 
-   Round 4: For actions  \alpha_1\alpha_2, enter the basis
+   Round 4: For actions  \alpha_1\alpha_2, enter the basis:
 
    ```mathematica
    {{-1, 0, Sqrt[2]/Sqrt[3], Sqrt[2]/Sqrt[3]}}
    ```
 
-   Round 3: For actions  \alpha_2\alpha_2, enter the basis
+   Round 3: For actions  \alpha_2\alpha_2, enter the basis:
 
    ```mathematica
    {{1, 0, 0, 0}, {0, 0, 1/Sqrt[2], 1/Sqrt[2]}}
