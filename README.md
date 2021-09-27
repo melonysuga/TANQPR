@@ -43,20 +43,20 @@ The complexity is shown, for the first time, to be in exponential time.
 
 **How to reproduce the example?**
 
+We have provided Wolfram Mathematica 12.0 with a graphical interface in the VM. You can directly import and use it. Our code supports mathematica 11.3 and above.
+If you have Wolfram Mathematica of Windows system, you can also import and run it directly. Note that the code of windows and linux versions are slightly different in the way of initializing data.
+
 1. Calculate I-type Reachable Space:
 
-  Open the file  ``` /home/vmcai/Desktop/TANQPR/wolf/ReachableSpaceI.nb``` and press shift and enter at the same time, 
-  then the result is displayed at the end of the file.
+    Open the file  ``` /home/vmcai/Desktop/TANQPR/wolf/ReachableSpaceI.nb``` and press shift and enter at the same time, then the result is displayed at the end of the file.
 
 2. Calculate II-type Reachable Space:
 
-  Open the file ```/home/vmcai/Desktop/TANQPR/wolf/ReachableSpaceII.nb``` and press shift and enter at the same time,
-  then the result is displayed at the end of the file.
+    Open the file ```/home/vmcai/Desktop/TANQPR/wolf/ReachableSpaceII.nb``` and press shift and enter at the same time, then the result is displayed at the end of the file.
 
 3. Calculate Pure Divergent Set:
 
-   Open the file ```/home/vmcai/Desktop/TANQPR/wolf/DivergentSet.nb``` and press shift and enter at the same time,
-  then enter the basis of subspace according to the output. The example input in the paper is as follows.
+   Open the file ```/home/vmcai/Desktop/TANQPR/wolf/DivergentSet.nb``` and press shift and enter at the same time,then enter the basis of subspace according to the output. The example input in the paper is as follows.
    
    Round 1: For actions  \alpha_1, enter the basis:
 
