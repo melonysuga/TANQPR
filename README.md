@@ -25,9 +25,7 @@ The complexity is shown, for the first time, to be in exponential time.
 
   computes the II-reachable subspace w.r.t. an input state and return a linearly independent basis of that subspace of Hermitian operators on Hilbert space;
 
-  	+ **LinearIndepHerm**
-  	
-    checks whether a Hermitian operator can be linearly expressed by the current linearly independent basis;
+  	+ **LinearIndepHerm** checks whether a Hermitian operator can be linearly expressed by the current linearly independent basis;
 
 - **DivergentSet.nb**
 
