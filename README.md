@@ -42,51 +42,51 @@ The complexity is shown, for the first time, to be in exponential time.
 
 **How to replicate the example?**
 
-We have provided Wolfram Mathematica 12.0 with a graphical interface in the VM. Our code supports mathematica 11.3 and above.
+The supported version of Wolfram Mathematica must be 11.3 and above.
 
-If you have Wolfram Mathematica for windows, you can directly operate the .nb files provided in wolframcode file. 
+We have provided Wolfram Mathematica 12.0 with a graphical interface in the VM.
 
-Note that the code of windows and linux versions are slightly different in the position of storing initial data.
+If you have already installed Wolfram Mathematica in your PC, you can directly operate the .nb files provided in ***wolframcode*** directory. 
 
-frontend
+Note that the layout of initial data of examples in Linux version is slightly different from Windows/MacOS version.
 
-1. Calculate I-type Reachable Space:
+1. Calculate the I-type Reachable Space:
 
-    Open the file  ``` /home/vmcai/Desktop/TANQPR/wolf/ReachableSpaceI.nb```, selcet the content in the first cell (if confused, see detailed in wolfram language) and run it (shift+enter), then the result is displayed at the end of the file.
+    Open the file  ``` /home/vmcai/Desktop/TANQPR/wolf/ReachableSpaceI.nb```, select the content in the first cell (if you are new to Mathematica, you can refer to wolfram language https://reference.wolfram.com/language/?source=footer) and run it (shift+enter), then the result is displayed at the end of the file.
 
-2. Calculate II-type Reachable Space:
+2. Calculate the II-type Reachable Space:
 
-    Open the file ```/home/vmcai/Desktop/TANQPR/wolf/ReachableSpaceII.nb```, selcet the content in the first cell (if confused, see detailed in wolfram language) and run it (shift+enter), then the result is displayed at the end of the file.
+    Open the file ```/home/vmcai/Desktop/TANQPR/wolf/ReachableSpaceII.nb```, select the content in the first cell and run it (shift+enter), then the result is displayed at the end of the file.
 
-3. Calculate Pure Divergent Set:
+3. Calculate the Pure Divergent Set:
 
-   Open the file ```/home/vmcai/Desktop/TANQPR/wolf/DivergentSet.nb```, selcet the content in the first cell (if confused, see detailed in wolfram language) and run it (shift+enter), then enter the basis of subspace according to the output. The example input in the paper is as follows.
+   Open the file ```/home/vmcai/Desktop/TANQPR/wolf/DivergentSet.nb```, select the content in the first cell and run it (shift+enter). When calculate the subspaces along the descending chain, a basis should be input by user according to the solution returned by ***Reduce***. Here we give the instructions for each iteration, one can check the relation between the basis and solution printed in the file.
    
-   Round 1: For actions  \alpha_1, enter the basis:
+   Round 1: For the scheduler \alpha_1, enter the basis:
 
    ```mathematica
    {{0, 0, 0, 1}, {1/Sqrt[2], 0, -(1/Sqrt[2]), 0}}
    ```
 
-   Round 2: For actions  \alpha_2, enter the basis:
+   Round 2: For the scheduler \alpha_2, enter the basis:
 
    ```mathematica
    {{1, 0, 0, 0}, {0, 0, 1/Sqrt[2], 1/Sqrt[2]}}
    ```
 
-   Round 3: For actions \alpha_1\alpha_1, enter the basis:
+   Round 3: For the scheduler \alpha_1\alpha_1, enter the basis:
 
    ```mathematica
    {{0, 0, 0, 1}, {1/Sqrt[2], 0, -(1/Sqrt[2]), 0}}
    ```
 
-   Round 4: For actions  \alpha_1\alpha_2, enter the basis:
+   Round 4: For the scheduler \alpha_1\alpha_2, enter the basis:
 
    ```mathematica
    {{-1, 0, Sqrt[2]/Sqrt[3], Sqrt[2]/Sqrt[3]}}
    ```
 
-   Round 3: For actions  \alpha_2\alpha_2, enter the basis:
+   Round 5: For the scheduler \alpha_2\alpha_2, enter the basis:
 
    ```mathematica
    {{1, 0, 0, 0}, {0, 0, 1/Sqrt[2], 1/Sqrt[2]}}
