@@ -44,7 +44,7 @@ The complexity is shown, for the first time, to be in exponential time.
 
 The supported version of Wolfram Mathematica must be 11.3 and above.
 
-We have provided Wolfram Mathematica 12.0 with a graphical interface in the VM.
+We have provided Wolfram Mathematica 12.0 with a graphical interface in the virtual machine ***vmcai-ae22.ova*** (The user name and password are ***vmcai***).
 
 If you have already installed Wolfram Mathematica in your PC, you can directly operate the .nb files provided in ***wolframcode*** directory. 
 
