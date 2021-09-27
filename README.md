@@ -45,40 +45,18 @@ The complexity is shown, for the first time, to be in exponential time.
 
 1. Calculate I-type Reachable Space:
 
-- in the linux:
-
-  open the terminal in the directory   ``` /home/vmcai/Desktop/TANQPR/wolf/```
-  then input the command and enter: 
-
-  ```
-  wolframscript > ReachableSpaceI.txt
-  ```
-
-  the results output in the file ```/home/vmcai/Desktop/TANQPR/wolf/RSI.dat```
-
-- in the cloud (https://www.wolframcloud.com/):
-  open the file ReachableSpaceII.nb and press shift and enter at the same time,
-  the result is displayed at the end of the file.
+  Open the file  ``` /home/vmcai/Desktop/TANQPR/wolf/ReachableSpaceI.nb``` and press shift and enter at the same time, 
+  then the result is displayed at the end of the file.
 
 2. Calculate II-type Reachable Space:
 
-- in the linux:
-  open the terminal in the directory ```/home/vmcai/Desktop/TANQPR/wolf/```
-  then input the command and enter:
-
-  ```
-  wolframscript > ReachableSpaceII.txt
-  ```
-
-  the results output in the file ```/home/vmcai/Desktop/TANQPR/wolf/RSII.dat```
-
-- in the cloud (https://www.wolframcloud.com/):
-  open the file ReachableSpaceII.nb and press shift and enter at the same time,
-  the result is displayed at the end of the file.
+  Open the file ```/home/vmcai/Desktop/TANQPR/wolf/ReachableSpaceII.nb``` and press shift and enter at the same time,
+  then the result is displayed at the end of the file.
 
 3. Calculate Pure Divergent Set:
-   Since Mathematica cannot perform interrupt input on the command line, we only provide the cloud operation method:
-   Please enter the basis of subspace according to the output.
+
+   Open the file ```/home/vmcai/Desktop/TANQPR/wolf/DivergentSet.nb``` and press shift and enter at the same time,
+  then enter the basis of subspace according to the output. The example input in the paper is as follows.
    
    Round 1: For actions  \alpha_1, enter the basis:
 
@@ -112,8 +90,3 @@ The complexity is shown, for the first time, to be in exponential time.
 
    Then the run ends, and the result is displayed at the end of the file.
    
-   If you want to use cloud resources (https://www.wolframcloud.com/), you can use this account, but please don't abuse it.
-
-    Account: 51194501050@stu.ecnu.edu.cn
-
-    Password: vmcai2021
